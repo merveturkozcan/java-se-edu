@@ -1,5 +1,14 @@
 package com.merveturk;
 
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor  // boş parametreli kurucu metod ekler lombok
+@AllArgsConstructor  // tüm parametreler dahil kurucu metod ekler.
+@ToString // Class içerisindeki dataların son durumunu görmek için kullanabiliriz.
+
+
 public class Hizmetli extends Personel {
     // Javada sadece 1 class miras alınır. Ve eğer miras alıyorsan kurucu metodların içerisinde
     // önce super sınıfa ait değişkenleri koyarsın sonra kendisine ait olanları eklersin.
@@ -8,25 +17,8 @@ public class Hizmetli extends Personel {
     private String hizmetAlani;
     private Byte hizmetYili;
 
-
-    public Hizmetli() {
+    public void getHizmetliBilgisi(Hizmetli hizmetli) {
+        System.out.println(" Hizmet Alanı : "   + hizmetli.getHizmetAlani()
+                + " Hizmet Yılı : " + hizmetli.getHizmetYili() );
     }
-
-    public Hizmetli(String adi, String hizmetAlani, Byte hizmetYili) {
-        super(adi);
-        this.hizmetAlani = hizmetAlani;
-        this.hizmetYili = hizmetYili;
-    }
-
-    public Hizmetli(String adi, String soyadi, String telNo, String kimlikNo, String hesapNo, String departman, String hizmetAlani, Byte hizmetYili) {
-        super(adi, soyadi, telNo, kimlikNo, hesapNo, departman);
-
-        this.hizmetAlani = hizmetAlani;
-        this.hizmetYili = hizmetYili;
-    }
-
-
-
-
-
 }

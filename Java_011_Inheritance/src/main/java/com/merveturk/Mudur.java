@@ -1,5 +1,10 @@
 package com.merveturk;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Mudur extends Personel {
     // Javada sadece 1 class miras alınır.
     // super : miras aldığı sınıfa ait olanlar.
@@ -7,37 +12,19 @@ public class Mudur extends Personel {
     private byte tecrubeYili;
     private String tahsilDurumu;
 
-    public Mudur() {
-    }
-
-
-    public Mudur(String adi, byte tecrubeYili, String tahsilDurumu) {
-        super(adi);
-        this.tecrubeYili = tecrubeYili;
-        this.tahsilDurumu = tahsilDurumu;
-    }
+    public Mudur() {}  // lombok ile @NoArgsConstructor yazdığında bu metodu ekler.
 
     public Mudur(String adi, String soyadi, String telNo, String kimlikNo, String hesapNo, String departman, byte tecrubeYili, String tahsilDurumu) {
         super(adi, soyadi, telNo, kimlikNo, hesapNo, departman); // bu olmalı ve yeri önemlidir.
         this.tecrubeYili = tecrubeYili;
         this.tahsilDurumu = tahsilDurumu;
+    }  // lombok ile @AllArgsConstructor yazdığında bu metodu ekler.
+
+    public void getMudurBilgisi(Mudur mudur) {
+        System.out.println(" Tecrübe Yılı : "   + mudur.getTecrubeYili()
+                + " Tahsil Durumu : " + mudur.getTahsilDurumu()
+
+        );
     }
 
-
-
-    public byte getTecrubeYili() {
-        return tecrubeYili;
-    }
-
-    public void setTecrubeYili(byte tecrubeYili) {
-        this.tecrubeYili = tecrubeYili;
-    }
-
-    public String getTahsilDurumu() {
-        return tahsilDurumu;
-    }
-
-    public void setTahsilDurumu(String tahsilDurumu) {
-        this.tahsilDurumu = tahsilDurumu;
-    }
 }
