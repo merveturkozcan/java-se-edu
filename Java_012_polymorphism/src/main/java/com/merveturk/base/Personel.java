@@ -1,11 +1,9 @@
-package com.merveturk;
+package com.merveturk.base;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.SplittableRandom;
 
 @Getter
 @Setter
@@ -26,6 +24,10 @@ public class Personel {
                          + " Kimlik No : "  + personel.getKimlikNo()
                          + " Hesap No : "   + personel.getHesapNo()
                          + " Departmanı : " + personel.getDepartman());
+    }
+
+    public void hesapla (){
+        System.out.println(" Personel class tan gelen hesapla ");
     }
 
 }

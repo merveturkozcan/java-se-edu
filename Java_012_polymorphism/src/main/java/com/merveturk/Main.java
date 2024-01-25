@@ -2,6 +2,10 @@ package com.merveturk;
 
 // paket her zaman 1. satırda yer alır.
 
+import com.merveturk.base.Personel;
+import com.merveturk.childs.Hizmetli;
+import com.merveturk.childs.Mudur;
+
 public class Main {
     public static void main(String[] args) {
         // herkesin ortak kullanacğı şeyleri bir class ta tutalım.
@@ -44,5 +48,9 @@ public class Main {
         hizmetli.getHizmetliBilgisi(hizmetli); // alt class -hizmetli classı get metodu
         System.out.println(hizmetli); // alt class - hizmetli classı toString metodu çalıştı.
 
-    }
-}
+        System.out.println("--------------------------------------------");
+
+
+        hizmetli.hesapla();  //  hızmetlı classında hesapla metodu oldugu surece onu cagıracaktır.
+
+    }}

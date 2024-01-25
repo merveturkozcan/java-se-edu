@@ -1,5 +1,6 @@
-package com.merveturk;
+package com.merveturk.childs;
 
+import com.merveturk.base.Personel;
 import lombok.*;
 
 @Getter
@@ -21,4 +22,14 @@ public class Hizmetli extends Personel {
         System.out.println(" Hizmet Alanı : " + hizmetli.getHizmetAlani()
                 + " Hizmet Yılı : " + hizmetli.getHizmetYili());
     }
+
+
+    //  bu metod zaten ust class da vardı buraya tekrar yazılınca overrıde edılmıs oldu.
+    //  @overrıde anotasyonu olması sart degıl
+    public void hesapla (){
+        System.out.println(" Hizmetli class tan gelen  hesapla ");
+    }
+
+
+
 }

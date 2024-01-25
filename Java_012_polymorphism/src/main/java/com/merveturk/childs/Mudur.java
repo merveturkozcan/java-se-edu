@@ -1,5 +1,6 @@
-package com.merveturk;
+package com.merveturk.childs;
 
+import com.merveturk.base.Personel;
 import lombok.Getter;
 import lombok.Setter;
 
