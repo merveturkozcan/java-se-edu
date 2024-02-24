@@ -3,7 +3,7 @@ package com.merveturk;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class StringIfadeler_Upper_Lower {
+public class String_Upper_Lower {
     public static void main(String[] args) {
         // .toUpperCase();   büyük harfe çevirir.
         // .toLowerCase();   küçük harfe çevirir.

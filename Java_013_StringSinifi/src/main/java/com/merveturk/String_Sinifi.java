@@ -2,7 +2,7 @@ package com.merveturk;
 
 import java.util.Scanner;
 
-public class Main_StringSinifi {
+public class String_Sinifi {
     public static void main(String[] args) {
 
         String ifade = "  Bugün hava bok gibi yağmurlu ve fırtınalı    deli gibi esiyor .";

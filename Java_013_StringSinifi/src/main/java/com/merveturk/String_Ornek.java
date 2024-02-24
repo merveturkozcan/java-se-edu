@@ -1,9 +1,8 @@
 package com.merveturk;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class StringIfadeler_Ornek {
+public class String_Ornek {
     public static void main(String[] args) {
 
 

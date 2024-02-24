@@ -1,6 +1,6 @@
 package com.merveturk;
 
-public class StringIfadeler_Replace {
+public class String_Replace {
     public static void main(String[] args) {
 
         /*
@@ -23,6 +23,14 @@ public class StringIfadeler_Replace {
             deger = deger.replace(turkceKarakter[k], engKarakter[k]);
         }
         System.out.println(deger);
+
+        System.out.println("******  2.YÖNTEM  **************************");
+
+        String ifade = "2022 yılı en yüksek değere sahip uygulamalrı.xlsx";
+        System.out.println(ifade.replace(" ","-")
+                .replace("ı","i").replace("ü","u")
+                .replace("ç","c").replace("ş","s")
+                .replace("ğ","g").replace("ö","o"));
 
 
 
